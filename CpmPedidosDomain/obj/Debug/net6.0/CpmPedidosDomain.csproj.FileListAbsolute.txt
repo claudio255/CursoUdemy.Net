@@ -1,0 +1,12 @@
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\bin\Debug\net6.0\CpmPedidosDomain.deps.json
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\bin\Debug\net6.0\CpmPedidosDomain.dll
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\bin\Debug\net6.0\CpmPedidosDomain.pdb
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\CpmPedidosDomain.csproj.AssemblyReference.cache
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\CpmPedidosDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\CpmPedidosDomain.AssemblyInfoInputs.cache
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\CpmPedidosDomain.AssemblyInfo.cs
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\CpmPedidosDomain.csproj.CoreCompileInputs.cache
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\CpmPedidosDomain.dll
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\refint\CpmPedidosDomain.dll
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\CpmPedidosDomain.pdb
+C:\Users\Claudio\source\repos\Cpmpedidos\CpmPedidosDomain\obj\Debug\net6.0\ref\CpmPedidosDomain.dll

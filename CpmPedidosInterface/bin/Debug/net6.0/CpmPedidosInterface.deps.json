@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CpmPedidosInterface/1.0.0": {
+        "dependencies": {
+          "CpmPedidosDomain": "1.0.0"
+        },
+        "runtime": {
+          "CpmPedidosInterface.dll": {}
+        }
+      },
+      "CpmPedidosDomain/1.0.0": {
+        "runtime": {
+          "CpmPedidosDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CpmPedidosInterface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CpmPedidosDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
