@@ -1,10 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CpmPedidosDomain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CpmPedidosRepository.Common
 {
     public class ApplicationDbContext : DbContext
     {
-        public virtual DbSet<Pedido> Pedidos { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Client> Customers { get; set; }
+        public DbSet<CategoryProduct> CategoriesProducts { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<PromotionProduct> PromotionsProducts { get; set; }
+        public DbSet<Combo> Combos { get; set; }
+        public DbSet<Request> Requests { get; set; }
+        public DbSet<RequestProduct> RequestsProducts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
