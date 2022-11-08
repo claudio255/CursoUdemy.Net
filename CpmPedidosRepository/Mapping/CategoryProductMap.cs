@@ -4,19 +4,16 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CpmPedidosRepository.Mapping
 {
-    public class CityMap : BaseDomainMap<City>
+    public class CategoryProductMap : BaseDomainMap<CategoryProduct>
     {
-        CityMap(): base("tb_cidade") { }
+        CategoryProductMap(): base("tb_categoria_produto") { }
 
-        public override void Configure(EntityTypeBuilder<City> builder)
+        public override void Configure(EntityTypeBuilder<CategoryProduct> builder)
         {
             base.Configure(builder);
 
             builder.Property(x => x.Name).HasColumnName("Name")
-                .HasMaxLength(100)
-                .IsRequired();
-            builder.Property(x => x.Uf).HasColumnName("uf")
-                .HasMaxLength(2)
+                .HasMaxLength(50)
                 .IsRequired();
             builder.Property(x => x.Active).HasColumnName("Active")
                 .IsRequired();
