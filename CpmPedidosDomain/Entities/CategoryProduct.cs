@@ -7,5 +7,7 @@ namespace CpmPedidosDomain.Entities
         public string Name { get; set; }
 
         public bool Active { get; set; }
+
+        public virtual List<Product> Products { get; set; }
     }
 }

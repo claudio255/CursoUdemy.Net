@@ -30,8 +30,20 @@ namespace CpmPedidosRepository.Mapping
                 .HasColumnName("Complement")
                 .HasMaxLength(75);
             builder.Property(x => x.Cep)
-                .HasColumnName("CEP")
+                .HasColumnName("Cep")
                 .HasMaxLength(8);
+
+            builder.HasOne(x => x.Clients)
+                .WithOne(x => x.Addresses)
+                .HasForeignKey<Client>(x => x.IdAddress);
+
+            builder.Property(x => x.IdCity)
+                .HasColumnName("Id_City")
+                .IsRequired();
+
+            builder.HasOne(x => x.Cities)
+                .WithMany()
+                .HasForeignKey(x => x.IdCity);
         }
     }
 }

@@ -13,5 +13,7 @@ namespace CpmPedidosDomain.Entities
 
         public int IdCity { get; set; }
         public virtual City Cities { get; set; }
+
+        public virtual Client Clients { get; set; }
     }
 }

@@ -22,6 +22,13 @@ namespace CpmPedidosRepository.Mapping
                 .IsRequired();
             builder.Property(x => x.Delivery)
                 .HasColumnName("Delivery");
+
+            builder.Property(x => x.IdClient)
+                .HasColumnName("Id_client")
+                .IsRequired();
+            builder.HasOne(x => x.Client)
+                .WithMany(x => x.Requests)
+                .HasForeignKey(x => x.IdClient);
         }
     }
 }

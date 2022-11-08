@@ -20,6 +20,20 @@ namespace CpmPedidosRepository.Mapping
                 .HasColumnName("Price")
                 .HasPrecision(17, 2)
                 .IsRequired();
+
+            builder.Property(x => x.IdRequest)
+                .HasColumnName("Id_request")
+                .IsRequired();
+            builder.HasOne(x => x.Requests)
+                .WithMany(x => x.RequestsProducts)
+                .HasForeignKey(x => x.IdRequest);
+
+            builder.Property(x => x.IdProduct)
+                .HasColumnName("Id_product")
+                .IsRequired();
+            builder.HasOne(x => x.Products)
+                .WithMany()
+                .HasForeignKey(x => x.IdRequest);
         }
     }
 }

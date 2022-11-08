@@ -14,6 +14,10 @@ namespace CpmPedidosDomain.Entities
 
         public virtual List<Image> Images { get; set; }
 
+        public virtual List<PromotionProduct> Promotions { get; set; }
+
+        public virtual List<Combo> Combos { get; set; }
+
         public bool Active { get; set; }
     }
 }

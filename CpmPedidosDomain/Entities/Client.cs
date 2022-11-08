@@ -11,5 +11,7 @@ namespace CpmPedidosDomain.Entities
         public virtual Address Addresses { get; set; }
 
         public bool Active { get; set; }
+
+        public virtual List<Request> Requests { get; set; }
     }
 }

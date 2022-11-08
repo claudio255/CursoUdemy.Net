@@ -23,6 +23,20 @@ namespace CpmPedidosRepository.Mapping
             builder.Property(x => x.Active)
                 .HasColumnName("Active")
                 .IsRequired();
+
+            builder.Property(x => x.IdImage)
+                .HasColumnName("Id_image")
+                .IsRequired();
+            builder.HasOne(x => x.Images)
+                .WithMany()
+                .HasForeignKey(x => x.IdImage);
+
+            builder.Property(x => x.IdProduct)
+            .HasColumnName("Id_product")
+            .IsRequired();
+            builder.HasOne(x => x.Products)
+                .WithMany(x => x.Promotions)
+                .HasForeignKey(x => x.IdProduct);
         }
     }
 }

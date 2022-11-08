@@ -23,6 +23,10 @@ namespace CpmPedidosRepository.Mapping
             builder.Property(x => x.Active)
                 .HasColumnName("Active")
                 .IsRequired();
+
+            builder.Property(x => x.IdAddress)
+                .HasColumnName("Id_Address")
+                .IsRequired();
         }
     }
 }

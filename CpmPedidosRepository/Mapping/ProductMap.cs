@@ -6,7 +6,7 @@ namespace CpmPedidosRepository.Mapping
 {
     public class ProductMap : BaseDomainMap<Product>
     {
-        ProductMap(): base("tb_produto") { }
+        ProductMap() : base("tb_produto") { }
 
         public override void Configure(EntityTypeBuilder<Product> builder)
         {
@@ -31,6 +31,13 @@ namespace CpmPedidosRepository.Mapping
             builder.Property(x => x.Active)
                 .HasColumnName("Active")
                 .IsRequired();
+
+            builder.Property(x => x.IdCategoryProduct)
+            .HasColumnName("Id_category_product")
+            .IsRequired();
+            builder.HasOne(x => x.Category)
+                .WithMany(x => x.Products)
+                .HasForeignKey(x => x.IdCategoryProduct);
         }
     }
 }
