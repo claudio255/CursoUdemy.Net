@@ -6,5 +6,7 @@
         public string FileName { get; set; }
 
         public bool Main { get; set; }
+
+        public virtual List<Product> Products { get; set; }
     }
 }

@@ -6,7 +6,7 @@ namespace CpmPedidosRepository.Mapping
 {
     public class CategoryProductMap : BaseDomainMap<CategoryProduct>
     {
-        CategoryProductMap(): base("tb_categoria_produto") { }
+        public CategoryProductMap(): base("tb_categoria_produto") { }
 
         public override void Configure(EntityTypeBuilder<CategoryProduct> builder)
         {

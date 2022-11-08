@@ -6,7 +6,7 @@ namespace CpmPedidosRepository.Mapping
 {
     public class RequestMap : BaseDomainMap<Request>
     {
-        RequestMap(): base("tb_pedido") { }
+        public RequestMap(): base("tb_pedido") { }
 
         public override void Configure(EntityTypeBuilder<Request> builder)
         {

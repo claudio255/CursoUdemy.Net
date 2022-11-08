@@ -6,7 +6,7 @@ namespace CpmPedidosRepository.Mapping
 {
     public class ClientMap : BaseDomainMap<Client>
     {
-        ClientMap(): base("tb_cliente") { }
+        public ClientMap(): base("tb_cliente") { }
 
         public override void Configure(EntityTypeBuilder<Client> builder)
         {

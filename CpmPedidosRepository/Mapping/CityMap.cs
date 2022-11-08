@@ -6,7 +6,7 @@ namespace CpmPedidosRepository.Mapping
 {
     public class CityMap : BaseDomainMap<City>
     {
-        CityMap(): base("tb_cidade") { }
+        public CityMap(): base("tb_cidade") { }
 
         public override void Configure(EntityTypeBuilder<City> builder)
         {

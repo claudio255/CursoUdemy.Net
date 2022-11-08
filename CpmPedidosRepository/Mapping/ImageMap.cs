@@ -6,7 +6,7 @@ namespace CpmPedidosRepository.Mapping
 {
     public class ImageMap : BaseDomainMap<Image>
     {
-        ImageMap(): base("tb_imagem") { }
+        public ImageMap(): base("tb_imagem") { }
 
         public override void Configure(EntityTypeBuilder<Image> builder)
         {

@@ -6,7 +6,7 @@ namespace CpmPedidosRepository.Mapping
 {
     public class ComboMap : BaseDomainMap<Combo>
     {
-        ComboMap(): base("tb_combo") { }
+        public ComboMap(): base("tb_combo") { }
 
         public override void Configure(EntityTypeBuilder<Combo> builder)
         {
